@@ -4,7 +4,7 @@ portfolio.config ["$routeProvider", "$locationProvider", ($routeProvider, $locat
 	$routeProvider
 		.when "/",
 			templateUrl: "index.html",
-			contoller: "siteCtrl"
+			controller: "siteCtrl"
 	.otherwise
 		redirectTo: "/"
 
@@ -13,7 +13,20 @@ portfolio.config ["$routeProvider", "$locationProvider", ($routeProvider, $locat
 ]
 
 
-portfolio.controller "siteCtrl", ["$scope", "$http", "$rootScope", ($scope, $http, $rootScope) ->
+portfolio.controller "siteCtrl", ["$scope", "$http", ($scope, $http) ->
+
+
+	# set project 1 to center on page load
+	$scope.init = ->
+
+	# need to add logic for left and right buttons
+	$scope.leftArrow = ->
+		console.log("left")
+
+	$scope.rightArrow = ->
+		console.log("right")
+
+
 
 
 ]
