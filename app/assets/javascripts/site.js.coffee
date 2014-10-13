@@ -26,7 +26,12 @@ portfolio.controller "siteCtrl", ["$scope", "$http", ($scope, $http) ->
 	$scope.rightArrow = ->
 		console.log("right")
 
+	$scope.boxClicked = (num) ->
+		console.log(num)
 
+
+# do I add a backend with all the projects and depoly to heroku?
+# to I try and hard code all of this on the front end?
 
 
 ]
