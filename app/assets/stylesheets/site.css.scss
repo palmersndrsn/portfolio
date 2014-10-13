@@ -3,23 +3,35 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
 	background-image: url("code_img.jpg");
-	min-height: 1000px;
+	min-height: 800px;
+	margin: auto 0;
+	text-align: center;
+}
+
+.row2 {
+	background-color: white;
 }
 
 .header {
 	margin-top: -20px;
 	text-align: center;
-	color: white;
 }
 
 #ps {
 	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: .4em;
 	margin-top: 30px;
+	color: white;
+	text-align: center;
+
 
 }
 
 #wd {
 	font-family: 'Great Vibes', 'Cursive';
+	color: white;
+	text-align: center;
+
 }
 
 .left_arrow {
