@@ -1,5 +1,83 @@
-<h1>Palmer Sanderson</h1>
-<h3>Web Developer</h3>
-<h5>Who really needs a Job</h5>
-<p>So he can win back the girl that he loves</p>
-<p>or at least go to the strip club and make it rain</p>
+
+<div class="row" ng-mouseenter="hideScreenshot()">
+
+	<div class="small-12-centered large-8-centered columns" >
+		<div class="header">
+			<h1 id="ps">Palmer Sanderson</h1>
+			<h3 id="wd">Web Developer</h3>
+
+<!-- <i class="fi-social-linkedin">&#xf1d0;</i> -->
+		</div>
+		<div id="btn-group">
+		<ul class="button-group">
+			<li><a href="http://github.com/palmersndrsn" target="_blank" class="button">GitHub</a></li>
+			<li><a href="http://twitter.com/palmer_sndrsn" target="_blank" class="button">Twitter</i></a></li>
+			<li><a href="http://linkedin.com/in/palmersanderson" target="_blank" class="button">Linkedin</a></li>
+		</ul>
+		</div>
+	</div>
+</div>
+<!--
+<div class="row row2">
+	<div ng-repeat="project in projects track by $index">
+		<div class="small-4 large-4 columns thumbnail" style="background: url({{project.img_url}})">
+			<a href="{{project.link}}" ng-show="linkLayer"></a>
+			<div ng-mouseenter="showInfo()"w class="filter-overlay"></div>
+			<div class="content">
+
+				<div ng-show="info">
+					<h3>{{project.title}}</h3>
+					<h5>Description:</h5>
+					<p>{{project.desc}}</p>
+					<h5>Tech:</h5>
+					<p>{{project.tech}}</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+<div class="row row2">
+
+	<div class="small-4 large-4 columns thumbnail">
+		<a href="http://is-it-cool.herokuapp.com" ng-show="linkLayer1" class="link" target="_blank"></a>
+		<div ng-show="screenshot1" ng-mouseenter="hideScreenshot(1)" class="filter-overlay" id="one"></div>
+		<div class="content">
+
+			<h3 id="title">Is it Cool?</h3>
+
+			<p>Is It Cool is a SPA made with mobile in mind. The idea came from wanting to know if an event is cool or not in real time. Users can create events and reviews on events they are attending. The most difficult part of this project was working with angular and rails to achieve secure authentication/authorization.
+			</p>
+			<p>
+			Tech: Rails, JavaScript, AngularJS, CoffeeScript, Twitter REST API, Postgres, and bootstrap.
+			</p>
+
+		</div>
+	</div>
+
+	<div class="small-4 large-4 columns thumbnail">
+		<a href="http://backyardapp.herokuapp.com" ng-show="linkLayer2" class="link" target="_blank"></a>
+		<div ng-show="screenshot2" ng-mouseenter="hideScreenshot(2)" class="filter-overlay" id="two"></div>
+		<div class="content">
+			<h3 id="title">Backyard App</h3>
+			<p>Backyard App was was created by four people using rails and assorted gems, as a way for users to rent backyards or pools. The design and functionality was inspired from our love for airbnb. My focus was handling the geolocation, ajax calls, map functionality, search, and styling, but we touched everything.
+			</p>
+			<p>
+			Tech: Rails, JavaScript, Handlebars, Mapbox, AJAX, Postgres, and Bootstrap.
+			</p>
+		</div>
+	</div>
+
+	<div class="small-4 large-4 columns thumbnail">
+		<a href="http://ramen-hunter.herokuapp.com" ng-show="linkLayer3" class="link" target="_blank"></a>
+		<div ng-show="screenshot3" ng-mouseenter="hideScreenshot(3)" class="filter-overlay" id="three"></div>
+		<div class="content">
+			<h3 id="title">Ramen Hunter</h3>
+			<p>Ramen Hunter is the first web app I ever built. I chose to build it because of my love for ramen and yelp has never worked well for finding it.</p>
+			<p>Tech: NodeJS, Express, Postgres, Sequelize, Foundation, HTML 5 Geolocation, Bcrypt, and Passport Local.</p>
+		</div>
+	</div>
+</div>
+<div class="under" ng-mouseenter="hideScreenshot()"></div>

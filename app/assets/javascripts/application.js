@@ -12,10 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require angular.min
 //= require angular-route.min
 //= require angular-rails-templates
-//= require bootstrap
-//= require bootstrap.min
+
 //= require_tree .
 //= require_tree ../templates
+
+$(function(){ $(document).foundation(); });
