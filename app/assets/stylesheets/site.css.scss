@@ -3,10 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
 	background-image: url("code_img.jpg");
-	min-height: 800px;
+	min-height: 750px;
 	margin: auto 0;
 	text-align: center;
 	color: white;
+}
+
+#btn-group {
+
+	margin-left: 310px;
 }
 
 .filter-overlay {
@@ -16,6 +21,10 @@ body {
 	width: 100%;
 	height: 100%;
 	z-index: 1;
+}
+
+.under {
+	height: 200px;
 }
 
 #one {
@@ -54,7 +63,7 @@ body {
 	background-color: black;
 	border: 2px solid white;
 	min-height: 380px;
-	min-width: 300px;
+	min-width: 299px;
 }
 
 .header {

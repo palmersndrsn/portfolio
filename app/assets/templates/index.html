@@ -1,12 +1,19 @@
 
 <div class="row" ng-mouseenter="hideScreenshot()">
 
-	<div class="small-12 large-10-centered columns" >
-		<div class=" header">
+	<div class="small-12-centered large-8-centered columns" >
+		<div class="header">
 			<h1 id="ps">Palmer Sanderson</h1>
 			<h3 id="wd">Web Developer</h3>
-			<button ng-click="leftArrow()" class="left_arrow"><</button>
-			<button ng-click="rightArrow()" class="left_right">></button>
+
+<!-- <i class="fi-social-linkedin">&#xf1d0;</i> -->
+		</div>
+		<div id="btn-group">
+		<ul class="button-group">
+			<li><a href="http://github.com/palmersndrsn" target="_blank" class="button">GitHub</a></li>
+			<li><a href="http://twitter.com/palmer_sndrsn" target="_blank" class="button">Twitter</i></a></li>
+			<li><a href="http://linkedin.com/in/palmersanderson" target="_blank" class="button">Linkedin</a></li>
+		</ul>
 		</div>
 	</div>
 </div>
@@ -33,8 +40,9 @@
  -->
 
 <div class="row row2">
+
 	<div class="small-4 large-4 columns thumbnail">
-		<a href="http://is-it-cool.herokuapp.com" ng-show="linkLayer1" class="link"></a>
+		<a href="http://is-it-cool.herokuapp.com" ng-show="linkLayer1" class="link" target="_blank"></a>
 		<div ng-show="screenshot1" ng-mouseenter="hideScreenshot(1)" class="filter-overlay" id="one"></div>
 		<div class="content">
 
@@ -50,7 +58,7 @@
 	</div>
 
 	<div class="small-4 large-4 columns thumbnail">
-		<a href="http://backyardapp.herokuapp.com" ng-show="linkLayer2" class="link"></a>
+		<a href="http://backyardapp.herokuapp.com" ng-show="linkLayer2" class="link" target="_blank"></a>
 		<div ng-show="screenshot2" ng-mouseenter="hideScreenshot(2)" class="filter-overlay" id="two"></div>
 		<div class="content">
 			<h3 id="title">Backyard App</h3>
@@ -63,7 +71,7 @@
 	</div>
 
 	<div class="small-4 large-4 columns thumbnail">
-		<a href="http://ramen-hunter.herokuapp.com" ng-show="linkLayer3" class="link"></a>
+		<a href="http://ramen-hunter.herokuapp.com" ng-show="linkLayer3" class="link" target="_blank"></a>
 		<div ng-show="screenshot3" ng-mouseenter="hideScreenshot(3)" class="filter-overlay" id="three"></div>
 		<div class="content">
 			<h3 id="title">Ramen Hunter</h3>
@@ -72,3 +80,4 @@
 		</div>
 	</div>
 </div>
+<div class="under" ng-mouseenter="hideScreenshot()"></div>
