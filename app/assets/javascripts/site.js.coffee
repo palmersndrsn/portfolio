@@ -34,10 +34,7 @@ portfolio.controller "siteCtrl", ["$scope", "$http", ($scope, $http) ->
 	$scope.rightArrow = ->
 		console.log("right")
 
-	# $scope.boxClicked = (num) ->
-	# 	console.log(num)
-	# 	# $window.open(url, windowName, attributes)
-	# 	$scope.window.open("http://ramen-hunter.herokuapp.com", "ramen-hunter")
+
 
 	$scope.hideScreenshot = (num) ->
 		console.log("hovering")
