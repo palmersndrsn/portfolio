@@ -25,19 +25,7 @@ portfolio.controller "siteCtrl", ["$scope", "$http", ($scope, $http) ->
 		$scope.linkLayer3 = false
 		$scope.screenshot3 = true
 
-	# need to add logic for left and right buttons
-	$scope.leftArrow = ->
-		console.log("left")
-		# need to figure out how to switch between the projects
-		# some how implent an index of boxes.
-
-	$scope.rightArrow = ->
-		console.log("right")
-
-
-
 	$scope.hideScreenshot = (num) ->
-		console.log("hovering")
 		if num == 1
 			$scope.linkLayer1 = true
 			$scope.linkLayer2 = false
@@ -68,7 +56,6 @@ portfolio.controller "siteCtrl", ["$scope", "$http", ($scope, $http) ->
 			$scope.screenshot3 = true
 
 	$scope.showScreenshot = (num) ->
-		console.log("mouseout")
 		if num == 1
 			$scope.linkLayer1 = false
 			$scope.screenshot1 = true
