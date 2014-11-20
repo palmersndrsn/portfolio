@@ -12,9 +12,7 @@ portfolio.config ["$routeProvider", "$locationProvider", ($routeProvider, $locat
 
 ]
 
-
 portfolio.controller "siteCtrl", ["$scope", "$http", ($scope, $http) ->
-
 
 	# set project 1 to center on page load
 	$scope.init = ->
